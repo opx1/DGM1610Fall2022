@@ -1,0 +1,20 @@
+using System;
+					
+public class NumbersClass
+{
+    public int number = 73;
+    public string numName = "Seventy Three";
+	 public void RunFunction()
+    {
+        Console.WriteLine(numName);
+    }
+}
+
+public class ClassWithFunctions
+{
+	public void Main()
+	{
+        Console.WriteLine("Class challenge practice") ;
+	}
+ 
+}   
