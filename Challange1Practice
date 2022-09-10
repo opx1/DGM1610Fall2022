@@ -70,3 +70,31 @@ public class Hero {
 	public float experience;
 	public int secrets;
 }
+
+using System;
+
+public class Program
+{
+	public Food foodKitchen;
+	public Food foodRestaurant;
+		
+	public void Main()
+	{
+		foodKitchen = new Food();
+		foodRestaurant = new Food();
+		
+		foodKitchen.donuts= 1.5f;
+		foodKitchen.strawberries = 10;
+		
+		foodRestaurant.donuts = 12f;
+		foodRestaurant.strawberries = 2;
+		
+		Console.WriteLine(foodKitchen.strawberries);
+		Console.WriteLine(foodRestaurant.donuts);
+	}
+}
+public class Food
+{
+	public int strawberries;
+	public float donuts;
+}
