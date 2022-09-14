@@ -2,15 +2,23 @@ using System;
 					
 public class Program
 {
+	public Operations myOperator;
+	
 	public  void Main()
 	{
+		myOperator = new Operations();
 		Console.WriteLine("Math Time!");
-		DoMath(7,8);
-		DoMath(2,1);
-		DoMath(6,5);
-		IfGreater(7,5);
-		IfGreater(3,9);
+		myOperator.DoMath(7,8);
+		myOperator.DoMath(2,1);
+		myOperator.DoMath(6,5);
+		myOperator.IfGreater(7,5);
+		myOperator.IfGreater(3,9);
 	}
+	
+}
+
+public class Operations
+{
 	public void DoMath(int value, int value2)
 	{
 		var number = value + value2;
