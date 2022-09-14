@@ -8,10 +8,20 @@ public class Program
 		DoMath(7,8);
 		DoMath(2,1);
 		DoMath(6,5);
+		IfGreater(7,5);
+		IfGreater(3,9);
 	}
 	public void DoMath(int value, int value2)
 	{
 		var number = value + value2;
 		Console.WriteLine(number);
+	}
+	public void IfGreater(int value, int value2)
+	{
+		if(value>value2)
+		{Console.WriteLine("True, the first is greater");
+		} else{
+			Console.WriteLine("False, the last is greater");
+		}
 	}
 }
