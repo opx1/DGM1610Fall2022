@@ -1,3 +1,4 @@
+//If Statements and accessing
 using System;
 					
 public class Program
@@ -30,6 +31,39 @@ public class Operations
 		{Console.WriteLine("True, the first is greater");
 		} else{
 			Console.WriteLine("False, the last is greater");
+		}
+	}
+}
+
+
+//Switch statemens
+
+using System;
+					
+public class Program
+{
+	public GameStates gameStates;
+	
+	public void Main()
+	{
+	 gameStates = new GameStates();
+	gameStates.CheckStates();
+	}
+}
+
+public class GameStates
+{
+	public enum States {
+		Starting,
+		Playing,
+		Ending,
+	}
+	public States currentState = States.Starting;
+	
+	public void CheckStates () {
+		switch (currentState) {
+			case States.Starting: Console.WriteLine("Starting Game"); 
+				break;
 		}
 	}
 }
