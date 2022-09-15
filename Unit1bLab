@@ -61,3 +61,33 @@ public class Program
 		Console.WriteLine(number);
 	}
 }
+
+//Switches Challenge
+
+using System;
+					
+public class Program
+{
+	public void Main()
+	{
+		int fruit = 4;
+switch (fruit) 
+{
+  case 1:
+    Console.WriteLine("oranges");
+    break;
+  case 2:
+    Console.WriteLine("strawberries");
+    break;
+  case 3:
+    Console.WriteLine("fruitsbasket");
+    break;
+  case 4:
+    Console.WriteLine("riceball");
+    break;
+  case 5:
+    Console.WriteLine("peach");
+    break;
+}
+	}
+}
