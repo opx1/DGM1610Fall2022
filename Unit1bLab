@@ -1,0 +1,42 @@
+using System;
+					
+public class Program
+{
+	public Mathmatics mathProblems;
+	
+	public void Main()
+	{
+		mathProblems = new Mathmatics();
+		
+		Console.WriteLine("How many apples does sarah have?");
+		mathProblems.DoMath(14,24);
+		mathProblems.IsItABerry(7,2);
+		mathProblems.IsItABerry(4,10);
+		mathProblems.Codeword("fluffernutter");
+		mathProblems.Codeword("peanutbutter");
+		
+	}
+}
+
+public class Mathmatics {
+	public void DoMath (int greenApples, int redApples) {
+		var apples = greenApples + redApples;
+		Console.WriteLine(apples);
+	}
+	
+	public void IsItABerry (int bananas, int oranges) {
+		if(bananas > oranges) {
+			Console.WriteLine("Bananas, Berries and Cream.");
+		} else {
+			Console.WriteLine("Oranges, Color or Fruit.");
+		}
+	}
+	public void Codeword (string codeWord) {
+		if(codeWord == "fluffernutter") {
+			Console.WriteLine("FLUFFERNUTTER!");
+		} else {
+			Console.WriteLine("AHHHHHH!");	
+		}
+	}
+	
+}
