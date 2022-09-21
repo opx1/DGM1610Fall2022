@@ -47,3 +47,32 @@ public class Program
 		}
 	}
 }
+
+//Arrays loops and Classes
+
+using System;
+					
+public class Program
+{
+	public void Main()
+	{
+		Animals[] animal = {new Animals(), new Animals(), new Animals()};
+		animal[1].animalType = "dog";
+		animal[2].animalType = "ferret";
+		
+		for (var i = 0; i < animal.Length; i++) {
+			animal[i].mammal = true ;
+		}
+		
+		Console.WriteLine(animal.Length);
+		foreach(var creature in animal){
+		Console.WriteLine(creature.animalType);	
+		}
+	}
+}
+
+public class Animals
+{
+	public string animalType = "cat";
+	public bool mammal = false;
+}
