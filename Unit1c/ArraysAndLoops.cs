@@ -76,3 +76,27 @@ public class Animals
 	public string animalType = "cat";
 	public bool mammal = false;
 }
+
+//While Loop
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	int i = 0;
+	while (i < 5) 
+		{
+		 Console.WriteLine(i);
+	 	 i++;
+		}
+		int a = 0;
+	do 
+	{
+  	Console.WriteLine(a);
+  	a++;
+	}
+	while (a < 5);
+	}
+}
