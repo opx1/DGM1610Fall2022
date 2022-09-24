@@ -1,0 +1,13 @@
+using System;
+					
+public class Program
+{
+	public void Main()
+	{
+		string[] games = {"Hollow Knight", "A Hat in Time", "FNAF", "Zelda"};
+		Console.WriteLine(games.Length);
+		foreach(var game in games){
+		Console.WriteLine();	
+		}
+	}
+}
