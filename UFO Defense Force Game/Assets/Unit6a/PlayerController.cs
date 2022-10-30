@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,5 +32,10 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotation);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
     }
 }
