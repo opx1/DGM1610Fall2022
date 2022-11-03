@@ -2,18 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemySpawnManager : MonoBehaviour
 {
   public GameObject[] ufoPrefabs;
-
-  public int ufoIndex;
+  private float spawnRangex = 20f;
+  private float spawnRangez = 20f;
+  
 
   private void Update()
   {
       if (Input.GetKeyDown(KeyCode.S))
       {
-          Instantiate(ufoPrefabs[ufoIndex], new Vector3(0, 0, 20), ufoPrefabs[ufoIndex].transform.rotation);
+          Vector3 spawnPos = new Vector3(Random.Range(-spawnRangex, spawnRangex), 0, spawnRangez);
+          int ufoIndex = Random.Range(0, ufoPrefabs.Length);
+          Instantiate(ufoPrefabs[ufoIndex], spawnPos, ufoPrefabs[ufoIndex].transform.rotation);
       }
   }
 }
