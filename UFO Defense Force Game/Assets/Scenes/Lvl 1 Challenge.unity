@@ -174,33 +174,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5505320593692597052, guid: c68b6689d1bf66c4594d524f517bd236, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5505320593692597054, guid: c68b6689d1bf66c4594d524f517bd236, type: 3}
       propertyPath: m_Name
       value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c68b6689d1bf66c4594d524f517bd236, type: 3}
---- !u!1 &947175436 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5505320593692597054, guid: c68b6689d1bf66c4594d524f517bd236, type: 3}
-  m_PrefabInstance: {fileID: 52214098}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &947175437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947175436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f835cd80e6732a4399b7d6480ca7e9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1072875039
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +288,7 @@ GameObject:
   - component: {fileID: 1805672086}
   - component: {fileID: 1805672090}
   - component: {fileID: 1805672091}
+  - component: {fileID: 1805672092}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -446,6 +426,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1805672092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805672085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5fefab23e13cdc46a6d5b1393d1abaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInput: 0
+  speed: 0
+  xRange: 20
+  blaster: {fileID: 0}
+  lazerBolt: {fileID: 0}
 --- !u!1 &2002151834
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,3 +527,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &2123030335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2123030337}
+  - component: {fileID: 2123030336}
+  m_Layer: 0
+  m_Name: CollectableSpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2123030336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123030335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6e2e7606fdb014da7169ed135b6b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectPrefabs:
+  - {fileID: 5505320593692597054, guid: c68b6689d1bf66c4594d524f517bd236, type: 3}
+--- !u!4 &2123030337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123030335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2692771, y: 4.848292, z: -3.125267}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
