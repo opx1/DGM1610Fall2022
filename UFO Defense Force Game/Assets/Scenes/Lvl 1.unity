@@ -171,7 +171,6 @@ MonoBehaviour:
   - {fileID: 5217511107531180742, guid: 206935733b2c42c4db3cfa54414dafc5, type: 3}
   - {fileID: 3551864627055458174, guid: e555dafe0af35c0488944c165edb49fd, type: 3}
   - {fileID: 356286837940765637, guid: 72b96c9e906b07b40841e0e69c57b3ff, type: 3}
-  ufoIndex: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
-  speed: 30
+  speed: 50
   xRange: 20
   blaster: {fileID: 2109061825}
   lazerBolt: {fileID: 4607142759913064130, guid: 9808a7e2065f54343aa4bc4d11068239, type: 3}
