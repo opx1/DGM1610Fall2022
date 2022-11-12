@@ -12,10 +12,15 @@ public class PlayerController : MonoBehaviour
     public Transform blaster;
     public GameObject lazerBolt;
 
+    public AudioClip blastSound;
+    public AudioClip endSound;
+    private AudioSource blasterAudio;
+
     public GameManager gameManager;
 
     private void Start()
     {
+        blasterAudio = GetComponent<AudioSource>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
@@ -39,6 +44,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false)
         {
             Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotation);
+            blasterAudio.PlayOneShot(blastSound);
+        }
+
+        if (gameManager.isGameOver==true)
+        {
+            blasterAudio.PlayOneShot(endSound);
         }
     }
 

@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 30
   lowerBounds: -15
+  gameManager: {fileID: 0}
 --- !u!54 &2421026243645056268
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,3 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 0}
   scoreToGive: 10
+  destroyed: 0
+  uFO: {fileID: 5217511107531180742}
+  explosion: {fileID: 8478629165561992699, guid: a85d3d146c775aa4189f36b3dec8c844, type: 3}
+  uFOPosition: {fileID: 5217511107531180762}
