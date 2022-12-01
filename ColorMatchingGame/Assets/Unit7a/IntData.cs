@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 [CreateAssetMenu]
 public class IntData : ScriptableObject
@@ -18,13 +15,20 @@ public class IntData : ScriptableObject
       value = number;
    }
 
-   public void DisplayImage(Image img)
+   public void SetValue(IntData obj)
    {
-      img.fillAmount = value;
+      value = obj.value;
    }
 
-   public void DisplayNumber(Text txt)
+   public void CompareValue(IntData obj)
    {
-      txt.text = value.ToString();
+      if (value >= obj.value)
+      {
+         
+      }
+      else
+      {
+         value = obj.value;
+      }
    }
 }
