@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 750027542968371877}
   - component: {fileID: -1585876079448028859}
   - component: {fileID: 3647109501557641199}
-  - component: {fileID: 3917322084901905623}
-  m_Layer: 7
-  m_Name: Ring
+  - component: {fileID: 4436984502116443182}
+  m_Layer: 6
+  m_Name: Dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -581723958, guid: 71156e914f1fdad4a814c685e0c3b12c, type: 3}
+  m_Sprite: {fileID: -941845690, guid: 71156e914f1fdad4a814c685e0c3b12c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3917322084901905623
+--- !u!114 &4436984502116443182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,11 +186,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 8882887293289281047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3251dfecade8f7e49a7701e98672e3a0, type: 3}
+  m_Script: {fileID: 11500000, guid: b87d4ae50a4169d42baa1409852c958f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idObj: {fileID: 0}
-  startEvent:
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayedEvent:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: 4de9e32657a597d448a35ad9c0034a21, type: 2}
