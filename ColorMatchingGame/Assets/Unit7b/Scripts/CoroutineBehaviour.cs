@@ -57,8 +57,8 @@ public class CoroutineBehaviour : MonoBehaviour
     {
         while (CanRun)
         {
-            yield return wfscObj;
             repeatUntilFalseEvent.Invoke();
+            yield return wfscObj;
         }
     }
 }
