@@ -10,7 +10,9 @@ public class CoroutineBehaviour : MonoBehaviour
     public bool canRun;
     public IntData counterNum;
     public float seconds = 3.0f;
+    public float cSeconds = 3.0f;
     private WaitForSeconds wfsObj;
+    private WaitForSeconds wfscObj;
     private WaitForFixedUpdate wffuObj;
 
     public bool CanRun
@@ -22,6 +24,7 @@ public class CoroutineBehaviour : MonoBehaviour
     private void Start()
     {
         wfsObj = new WaitForSeconds(seconds);
+        wfscObj = new WaitForSeconds(cSeconds);
         wffuObj = new WaitForFixedUpdate();
         startEvent.Invoke();
     }
@@ -54,7 +57,7 @@ public class CoroutineBehaviour : MonoBehaviour
     {
         while (CanRun)
         {
-            yield return wfsObj;
+            yield return wfscObj;
             repeatUntilFalseEvent.Invoke();
         }
     }
